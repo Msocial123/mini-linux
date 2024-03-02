@@ -170,10 +170,10 @@ try {
 } catch (err) {
   console.error(err);
   if (err.code === 11000) {
-    // Duplicate booking error
+    // if Duplicate booking error
     res.render('new-booking', { error: 'A booking with the same details already exists.' });
   } else {
-    // Other errors
+    
     res.redirect('/new-booking');
   }
 }
